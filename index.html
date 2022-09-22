@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Text Editor</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li><button style="font-weight: bold;" onclick="textbold()">B</button></li>
+                    <li><button style="text-decoration: underline;" onclick="textunderline()">U</button></li>
+                    <li><button style="font-style: italic;" onclick="textitalic()">I</button></li>
+                    <li id="colorbtn"><button onclick="textcolor()">A</button><input type="color" id="colorpick"></li>
+                    <li><img src="/Resources/left.png" alt="allign left button" onclick="textleft()"></li>
+                    <li><img src="/Resources/center.png" alt="allign center button" onclick="textcenter()"></li>
+                    <li><img src="/Resources/right.png" alt="allign right button" onclick="textright()"></li>
+                    <li><img src="/Resources/justify.png" alt="allign justify button" onclick="textjustify()"></li>
+                    <li><img src="/Resources/undo-4-32.png" alt="undo button" onclick="undo()"></li>
+                    <li><img src="/Resources/action-redo-32.png" alt="redo button" onclick="redo()"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div contentEditable id="text">
+            Enter your text here
+        </div>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

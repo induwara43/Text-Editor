@@ -12,7 +12,7 @@ function textcolor() {
     document.execCommand("forecolor", true, pickedcolor);
 }
 function textleft() {
-    document.execCommand("Justifyleft");
+    document.execCommand("Justifyleft", false, null);
 }
 function textcenter() {
     document.execCommand("JustifyCenter");

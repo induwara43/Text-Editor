@@ -2,12 +2,11 @@
     margin: 0;
 }
 
-nav {
+header {
     background-color: gray;
-    height: 5em;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
 }
 
 ul {
@@ -20,6 +19,7 @@ ul {
 
 li {
     margin-right: 2em;
+    text-align: center;
 }
 
 button {
@@ -32,6 +32,11 @@ button {
 
 button:hover {
     cursor: pointer;
+    background: rgb(110, 110, 110);
+}
+
+button:active {
+    background: none;
 }
 
 img {
@@ -40,6 +45,11 @@ img {
 
 img:hover {
     cursor: pointer;
+    background: rgb(110, 110, 110);
+}
+
+img:active {
+    background: none;
 }
 
 main {
@@ -55,20 +65,36 @@ main {
     border: 1px solid black;
 }
 
-#colorbtn {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-}
-
-#colorbtn button {
-    padding: 0;
-}
-
 #colorbtn input {
     background: none;
     border: none;
-    padding: 0;
     height: 1.5em;
     width: 3em;
+    padding: 0;
+    margin-top: 0;
+}
+
+#colorbtn input:hover {
+    cursor: pointer;
+    background: rgb(110, 110, 110);
+}
+
+@media only screen and (max-width: 600px) {
+    ul {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    li {
+        margin-right: 0;
+        padding: 1em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 3em;
+    }
 }

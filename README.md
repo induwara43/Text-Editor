@@ -1,4 +1,4 @@
-# Text Editor Project
+# Text Editor
 
 A simple text editor implemented in HTML, CSS, and JavaScript as part of an University assignment.
 
